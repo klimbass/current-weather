@@ -1,25 +1,67 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+body {
+  background-color: rgb(150, 191, 228);
+  background: linear-gradient(5deg, #036564, #033649);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+input[name='city'] {
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding: 6px 8px;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  color: rgb(42, 47, 46);
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+.time-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 52px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.card {
+  display: inline-block;
+  background: linear-gradient(5deg, #556270, #c44d58);
+  width: 200px;
+  height: 250px;
+  border: none;
+  border-radius: 14px;
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.current-weather {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+#btn-submit {
+  padding: 6px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
 }
