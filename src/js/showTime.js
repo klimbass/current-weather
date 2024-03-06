@@ -14,8 +14,9 @@ const hours = document.querySelector('.hours');
 function showTime() {
   setInterval(() => {
     const time = new Date();
-    const h = time.getHours();
-    const m = time.getMinutes();
+
+    const h = time.getHours().toString().padStart(2, '0');
+    const m = time.getMinutes().toString().padStart(2, '0');
 
     hours.textContent = h;
     min.textContent = m;
