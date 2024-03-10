@@ -63,6 +63,7 @@ input[name='city'] {
 .current-weather {
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+  color: rgb(235, 235, 240);
   font-size: 28px;
   font-weight: 500;
 }
