@@ -1,6 +1,10 @@
 body {
   background-color: rgb(150, 191, 228);
-  background: linear-gradient(5deg, #036564, #033649);
+  background-image: url('../img/6291683.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  /* background: linear-gradient(5deg, #036564, #033649) ; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +30,7 @@ input[name='city'] {
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  color: #45cecc;
+  color: rgb(42, 47, 46);
 }
 
 .time {
@@ -41,10 +45,14 @@ input[name='city'] {
 .card {
   position: relative;
   display: inline-block;
-  background: linear-gradient(5deg, #556270, #c44d58);
+  /* background: linear-gradient(5deg, #556270, #c44d58); */
+  background: transparent;
+  backdrop-filter: blur;
+  background: linear-gradient(5deg, #bfc8d17c, #d2a5a964);
   width: 200px;
   height: 250px;
   border: none;
+  border: 2px solid #45cecc;
   border-radius: 14px;
   padding: 16px 16px;
   display: flex;
