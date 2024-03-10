@@ -45,10 +45,9 @@ input[name='city'] {
 .card {
   position: relative;
   display: inline-block;
-  /* background: linear-gradient(5deg, #556270, #c44d58); */
   background: transparent;
-  backdrop-filter: blur;
-  background: linear-gradient(5deg, #bfc8d17c, #d2a5a964);
+  backdrop-filter: blur(10px);
+  background: linear-gradient(5deg, #000000ad, #ffffff9c);
   width: 200px;
   height: 250px;
   border: none;
